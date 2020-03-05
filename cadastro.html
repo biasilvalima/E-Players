@@ -22,7 +22,8 @@
                 <ul>
                     <li><a href="index.html" title="voltar para a página inicial">INÍCIO</a></li>
                     <li><a href="index.html#horarios" title="Ir até a sessão de horário de partidas">HORÁRIOS</a></li>
-                    <li><a href="index.html#resultado" title="Ir até a sessão de resultados das partidas">RESULTADOS</a></li>
+                    <li><a href="index.html#resultado" title="Ir até a sessão de resultados das partidas">RESULTADOS</a>
+                    </li>
                     <li><a href="index.html#noticias" title="Ir até a sessão de notícias">NOTÍCIAS</a></li>
                     <li><a href="#" title="buscar conteúdo"><i class="fas fa-search"></i></a></li>
                 </ul>
@@ -31,75 +32,77 @@
 
     </header>
     <main>
-       <div class="titulo_pagina">
-           <h1>CADASTRO DE JOGADOR</h1>
-       </div>
-
-       <form action="" method="post">
-      
-        <div class="campo">
-            <label for="nome">nome do jogador</label>
-            <input type="text" name="nome do jogador" id="nome">
+        <div class="titulo_pagina">
+            <h1>CADASTRO DE JOGADOR</h1>
         </div>
 
-        <div class="campo">
-            <label for="nick">nick de jogador</label>
-            <input type="text" name="nick do jogador" id="nick">
-        </div>
+        <form class="form_cadastro" action="" method="post">
 
-        <div class="campo">
-            <label for="email">email</label>
-            <input type="text" name="email" id="email">
-        </div>
+            <div class="campo">
+                <label for="nome">Nome do jogador</label>
+                <input type="text" name="nome do jogador" id="nome">
+            </div>
 
-        <div class="campo">
-            <label for="senha">senha</label>
-            <input type="password" name="senha" id="senha">
-        </div>
+            <div class="campo">
+                <label for="nick">Nick de jogador</label>
+                <input type="text" name="nick do jogador" id="nick">
+            </div>
 
-        <div class="campo">
-            <label for="senha_confirma">repita a senha</label>
-            <input type="password" name="senha_confirma" id="senha_confirma">
-        </div>
+            <div class="campo">
+                <label for="email">E-mail</label>
+                <input type="text" name="email" id="email">
+            </div>
 
-        <div class="campo">
-            <label for="nascimento">nascimento</label>
-            <input type="date" name="nascimento" id="nascimento">
-        </div>
+            <div class="campo">
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha">
+            </div>
 
-        <div class="campo">
-            <label for="nacionalidade">País </label>
-            <select name="pais" id="pais">
-            <option value="BR">Brasil</option>
-            <option value="us">Estados Unidos</option>
-            <option value="ES">Espanha</option>
-          </select>
-        </div>
-        <fieldset>
-            <legend>Sexo</legend>
-            
-            <input type="radio" name="sexo" value="M" id="Masculino">
-            <label for="masculino">Masculino</label>
+            <div class="campo">
+                <label for="senha_confirma">Repita a senha</label>
+                <input type="password" name="senha_confirma" id="senha_confirma">
+            </div>
 
-            <input type="radio" name="sexo" value="F" id="Feminino">
-            <label for="Feminino">Feminino</label>
+            <div class="campo">
+                <label for="nascimento">Nascimento</label>
+                <input type="date" name="nascimento" id="nascimento" min="1900-01-01" max="2020-03-05">
+            </div>
 
-            <input type="radio" name="sexo" value="O" id="Outro">
-            <label for="outro">Outro</label>
+            <div class="campo">
+                <label for="nacionalidade">País </label>
+                <select name="pais" id="pais">
+                    <option value="BR">Brasil</option>
+                    <option value="us">Estados Unidos</option>
+                    <option value="ES">Espanha</option>
+                </select>
+            </div>
 
-            <input type="radio" name="sexo" value="N" id="NA">
-            <label for="NA">Prefiro não dizer</label>
+            <fieldset>
+                <legend>Sexo</legend>
 
-        </fieldset>
+                <input type="radio" name="sexo" value="M" id="Masculino">
+                <label for="masculino">Masculino</label>
 
-        <div class="campo">
-            <input type="checkbox" name="check" id="check">
-            <label for="check">
-                Declaro que li e aceito os termos de uso deste site.
-            </label>
-        </div>
-        
-       </form>
+                <input type="radio" name="sexo" value="F" id="Feminino">
+                <label for="Feminino">Feminino</label>
+
+                <input type="radio" name="sexo" value="O" id="Outro">
+                <label for="outro">Outro</label>
+
+                <input type="radio" name="sexo" value="N" id="NA">
+                <label for="NA">Prefiro não dizer</label>
+
+            </fieldset>
+
+            <div class="campo termos">
+                <input type="checkbox" name="check" id="check">
+                <label for="check">
+                    Declaro que li e aceito os termos de uso deste site.
+                </label>
+            </div>
+            <button type="submit" class="btn gradient"> Cadastrar-se </button>
+
+        </form>
 
     </main>
 
