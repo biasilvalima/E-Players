@@ -15,10 +15,15 @@
 <body>
     <header>
         <div class="container cabecalho">
-            <a href="index.html">
-                <img src="images/Imagens/Logo.svg" alt="Logo do site E-Players">
+            <div>
+                <a href="#" onclick="botaoMenu()">
+            <i class="fas fa-bars"></i>
             </a>
-            <nav>
+            <a href="index.html">
+                <img src="images/Imagens/Logo.svg" alt="Logo do site E-Players">   
+               </div>           
+            </a>
+            <nav id="menu">
                 <ul>
                     <li><a href="index.html" title="voltar para a página inicial">INÍCIO</a></li>
                     <li><a href="#horarios" title="Ir até a sessão de horário de partidas">HORÁRIOS</a></li>
@@ -312,6 +317,16 @@
         </div>
         <p> 2077 SENAI Eletronics Sports - Todos os direitos reservados</p>
     </footer>
+    <script>
+        function botaoMenu(){
+            var m = document.getElementById("menu")
+        if(m.style.display == "block"){
+            m.style.display = "none"
+        }else{
+            m.style.display = "block"
+        }
+        }
+    </script>
 </body>
 
 </html>
